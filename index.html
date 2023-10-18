@@ -1,202 +1,300 @@
 <!DOCTYPE html>
-<html lang = "en", dir="ltr">
-<head>
-<meta charset="UTF-8">
-<title>- Milka Vincentiya -</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link href="style.css" rel="Stylesheet" type="Text/CSS">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-	
-</head>
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-<body>
-	<script src="script.js"></script>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
 
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Jane Doe | Web Developer</title>
+  </head>
 
-	<main>
-		<div class="nav-btn" style="float: right">
-                <div class="nav-links">
-			<ul>
-				<li class="nav-link" style="--i: .85s">
-			<a href="#">English<i class="fas fa-caret-down"></i></a>
-			<div class="dropdown">
-				<ul>
-                                    <li class="dropdown-link">
-					    <a href="#jp" data-reload>日本語</a></li>
-					<li class="dropdown-link">
-						<a href="#es" data-reload>Español</a></li>
-					<li class="dropdown-link">
-					    <a href="#zh" data-reload>中文</a>
-				    </li>
-				</ul>
-				</li>
-			</ul>
-			</div>
-			</div>
-		</div>
-	
-		<div class="box1">
-			<center><img src="test-02.png" width="400px" height="400px">
-		
-         
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>JANE DOE</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+      </button>
+    </nav>
+    
+    <p> 0024 </p>
 
-            <div class="nav-btn">
-                <div class="nav-links">
-                    <ul>
-                        <li class="nav-link" style="--i: .85s">
-                            <a href="#">Data/Analytics<i class="fas fa-caret-down"></i></a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="#">Must-Buy Property in Melbourne, Australia<i class="fas fa-caret-down"></i></a>
-                                        <div class="dropdown second">
-					      <ul>
-						      <li class="dropdown-link"><a href="https://github.com/akulim/10-must-buy-property-project/blob/main/TOP%2010%20MUST-BUY%20PROPERTY.pdf" target="_blank"/>Presentation Slides</a></li>
-						      <li class="dropdown-link"><a href="https://github.com/akulim/10-must-buy-property-project/blob/main/10_Must_Buy_Property_in_Melbourne%2C_Australia.ipynb" target="_blank"/>Code (.ipynb)</a></li>
-					      <div class="arrow"></div>
-					      </ul>
-		    			</div>
-		    			</li>
-					<div class="arrow"></div>
-					
-                                      <li class="dropdown-link">
-                                        <a href="#">Country Classification<i class="fas fa-caret-down"></i></a>
-		      			<div class="dropdown second">
-					  	<ul>
-						  	<li class="dropdown-link"><a href="https://github.com/akulim/country-classification/blob/main/Country_Classification.pdf" target="_blank"/>Presentation Slides</a></li>
-						  	<li class="dropdown-link"><a href="https://github.com/akulim/country-classification/blob/main/Country_Classification_Project.ipynb" target="_blank"/>Code (.ipynb)</a></li>
-						<div class="arrow"></div>
-						</ul>
-                                         </div>
-                                      </li>
-                                               
-	
-				      <li class="dropdown-link">
-					  <a href="#">Data Visualization<i class="fas fa-caret-down"></i></a>
-					<div class="dropdown second">
-					  <ul>
-						  <li class="dropdown-link"><a href="https://akulim.github.io/Indonesia-Tourism-Viz/", target="_blank"/>Indonesia's Tourism Destination</a></li>
-					      	  <li class="dropdown-link"><a href="https://akulim.github.io/insurance-scoring/", target="_blank"/>Insurance Scoring</a></li>
-					      <div class="arrow"></div>  
-					  </ul>
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="assets/images/wfh_1.svg"
+        alt="jane-doe"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+          inventore tempore minus nemo, iste ullam illo laboriosam maiores
+          repudiandae quos!
+        </p>
+      </div>
+    </section>
 
-                                      <li class="dropdown-link">     
-					   <a href="https://github.com/akulim/ssuperrmarket-checkout-system", target="_blank"/>SSuperrmarket Checkout System</a>
-					</li>
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+        autem deleniti cupiditate molestias quis unde quae totam porro dicta
+        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+        nostrum dolor minus, libero delectus praesentium perferendis
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+        consequuntur labore? Ea totam voluptas amet!
+      </p>
+    </section>
 
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
 
-                                        </div>
-                                       </li>
-                         		
-                                
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="nav-link" style="--i: 1.1s">
-                            <a href="#">Writing/Translation<i class="fas fa-caret-down"></i></a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="https://medium.com/@akulim">Medium</a>
-                                    </li>
-                               
-                                    <li class="dropdown-link">
-                                        <a href="#">EN - ID<i class="fas fa-caret-down"></i></a>
-                                        <div class="dropdown second">
-                                            <ul>
-                                                <li class="dropdown-link"><a href="littleprince1.html" target="_blank"/>Little Prince Chapter 1</a></li>
-						<li class="dropdown-link"><a href="oculus.html" target="_blank">The Latte Factor Chapter 1</a></li>
-				    	    <div class="arrow"></div>
-				    	    </ul>
-				    	</div>
-				     </li>
-					<div class="arrow"></div>
-
-                                     <li class="dropdown-link">
-                                      	<a href="#">JP - ID<i class="fas fa-caret-down"></i></a>
-                                            <div class="dropdown second">
-                                                <ul>
-                                                            <li class="dropdown-link">
-                                                                <a href="#"><a href="news-jp.html" target="_blank">2020 Property News</a>
-                                                            </li>
-                                                            <div class="arrow"></div>
-                                                  </ul>
-                                             </div>
-                                       </li>
-                                      <div class="arrow"></div>
-                                   </ul>
-                                </div>
-                           </li>
-
-                                   
-                        <li class="nav-link" style="--i: 1.35s">
-                            <a href="#">Graphic Design<i class="fas fa-caret-down"></i></a>
-				<div class="dropdown">
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="#">@_logosid (instagram)<i class="fas fa-caret-down"></i></a>
-                                        <div class="dropdown second">
-                                            <ul>
-                                                <li class="dropdown-link"><a href="https://www.instagram.com/p/CE3WLubgSa2/?igshid=1q872iwsc21zd" target="_blank"/>Toleransi Agama</a></li>
-								    <li class="dropdown-link"><a href="https://www.instagram.com/p/CF3uL1Vgc94/?igshid=6oo8sj0c98gh" target="_blank"/>Kodrat: "Dari Sananya Udah Begitu"</a></li>
-								    <li class="dropdown-link"><a href="https://www.instagram.com/p/COb9qUBnY1D/" target="_blank"/>Antonio Gramsci: Intelektual Organik dan Tradisional</a></li>
-								    <li class="dropdown-link"><a href="https://www.instagram.com/p/CQfZgreHhBq/" target="_blank"/>The Reading Life of C.S. Lewis</a></li>
-					    <div class="arrow"></div>
-					    </ul>
-				    	</div>
-				     </li>
-			
-				</ul>
-				</div>
-                        </li>
-                    </ul>
-                </div>
-
-                
-            </div>
-
-           
-                </div>
-            </div>
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
         </div>
-		
-		</div>
 
-		<aside class="shadowbox">
-			<h2>A Place of Trial and Error</h2>
-			<p align="justify"><font size="2pt">A Policy Analyst with 3 years of professional experience in analyzing national and international policy for
-				ASEAN Mutual Recognition Agreement (MRA). Interested in seeking a professional experience in data field
-				which leads to learn it through data science and analyst course. From her previous experience, she provided
-				a well-rounded background and enabled her to develop an understanding of international relation and
-				business sector, customer relation. On the technical side, she is skilled in Python, SQL, and Tableau.
-				Therefore, with the experiences she has and tools that have been taught, she believed the obtained skills will
-				be useful in economy or urban analysis things but are not limited to that.
-				<br>
-				<i>Enjoy the result of my study that could be found in this place!</i>
-			</p>
-			<br>
-			--
-			<br>
-			<b>Learning Milestones</b>
-			<ul>
-				<li>Python: <u><i><a href="https://www.datacamp.com/statement-of-accomplishment/course/8c9cf2c12ecb23ce43fe9612f1eaec3cbe570292?share=true">intermediate</a></u>,
-					<u><a href="https://www.datacamp.com/statement-of-accomplishment/course/e96e473a3504cef950c561d385e0a7fa2bc16a98?share=true">geospatial data</a>.</u></i></li>
-				<li>SQL: <u><i><a href="https://www.datacamp.com/statement-of-accomplishment/course/e4b6f4fbada245d13efa86b363970f34c562c3b3?share=true">intermediate</a></u>, 
-					<u><a href="https://www.datacamp.com/statement-of-accomplishment/course/8cbde29b75fa49af11eeaaa4d94fc5ec9617b800?share=true">EDA in SQL</a>.</u></i></li>
-				<li>Shell/Bash script	: <u><i><a href="https://www.datacamp.com/statement-of-accomplishment/course/4cb287da5db94f7beb3bf6025c064e2f412a7302?share=true">basic operations</a>.</u></i></li>
-				<li>Adobe Photoshop, Illustrator</li>
-				</ul></font>
-			<br>
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-bootstrap.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-react-native.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
 
-		</aside>
-		
-	</main>
-	
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/expenseTracker.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Expense Tracker</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/netflixClone.png"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/greenyEarth.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Greeny Earth</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
 
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylnggw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-twitter-circled.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+    </div>
 
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2021</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="https://twitter.com/koladechris" target="_blank"
+          >Kolade Chris (Ksound)</a
+        >
+      </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
